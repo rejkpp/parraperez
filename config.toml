@@ -1,9 +1,73 @@
-baseURL = "http://parraperez.com"
+baseURL = "https://parraperez.com"
 title = "Parra Legacy"
+#subtitle  = ""
+
+DefaultContentLanguage = "en"
 languageCode = "en-us"
-disableKinds = ["sitemap", "RSS"]
+
 theme = "webslides"
 
-[params]
-  author = "ramiro"
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "all rights reserved"
+
+# googleAnalytics = ""
+# disqusShortname = ""
+
+# archetypeDir = "archetypes"
+# contentDir   = "content"
+# dataDir      = "data"
+# layoutDir    = "layouts"
+# publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpored = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = true
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+# [permalinks]
+#   posts = "/story/:title/"
+
+[author]
+  name = "ramiro"
   homepage = "ramiro.me"
+
+  [blackfriday]
+    hrefTargetBlank = true
+
+  [params]
+    dateform        = "2 Jan, 2006"
+    dateformShort   = "2 Jan"
+    dateformNum     = "2006.01.02"
+    dateformNumTime = "2006.01.02 02:04 pm GMT -0700"
+
+    # Metadata mostly used in document's head
+    description = "The Legacy of Parra from Parra Perez"
+    keywords = "Parra Perez ParraPerez parraperez.com"
+    images = [""]
+
+    # Set disableReadOtherPosts to true in order to hide the links to other posts.
+    disableReadOtherPosts = false
+
+    # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+    # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+    customCSS = []
+    customJS  = []
+
+    # Default theme "light" or "dark"
+    defaultTheme = "dark"
+    themeColor = "#D12F19"
+
+    # Colors for favicons
+    [params.favicon.color]
+      mask = "#D12F19"
+      msapplication = "#D12F19"
+      theme = "#D12F19"
