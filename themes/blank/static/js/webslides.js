@@ -1066,7 +1066,7 @@ var WebSlides = function () {
 
       if (!isMovingForward) {
         nextSlide.moveBeforeFirst();
-        className = 'slideInLeft';
+        className = 'fadeIn';
       }
 
       if (this.currentSlide_) {
