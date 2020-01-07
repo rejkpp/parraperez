@@ -36,14 +36,12 @@ disableHugoGeneratorInject = false
 # [permalinks]
 #   posts = "/story/:title/"
 
-[author]
-  name = "ramiro"
-  homepage = "ramiro.me"
 
   [blackfriday]
     hrefTargetBlank = true
 
   [params]
+    author          = "ramiro"
     dateform        = "2 Jan, 2006"
     dateformShort   = "2 Jan"
     dateformNum     = "2006.01.02"
