@@ -1,10 +1,11 @@
-{{ define "main" }}
-	<main>
-		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-		{{ range $paginator.Pages }}
-			{{ .Render "summary" }}
-		{{ end }}
-		{{ partial "pagination.html" . }}
-	</main>
-{{ partial "sidebar.html" . }}
-{{ end }}
+<article id="webslides">
+    <section>
+        <h1>Slide 1</h1>
+    </section>
+    <section class="bg-black aligncenter">
+    <!-- .wrap = container 1200px -->
+        <div class="wrap">
+            <h1>Slide 2</h1>
+        </div>
+    </section>
+</article>
