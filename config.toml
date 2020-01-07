@@ -1,0 +1,26 @@
+baseURL = "http://parraperez.com"
+languageCode = "en-us"
+title = "My New Hugo Site"
+disableKinds = ["sitemap", "RSS"]
+theme = "webslides"
+
+[params]
+  author = "ramiro"
+  homepage = "ramiro.me"
+
+
+[params.webslides]
+  banner = false
+  slideshow = true
+  vertical = false
+  autoslide = false
+  changeOnClick = false
+  disableLoop = false
+  minWheelDelta = 40
+  disableNavigateOnScroll = false
+  scrollWait = 450
+  slideOffset = 50
+  hideIndex = false
+
+[blackfriday]
+extensionsmask = ["autoHeaderIds"]
