@@ -1,6 +1,6 @@
 baseURL = "http://parraperez.com"
-languageCode = "en-us"
 title = "Parra Legacy"
+languageCode = "en-us"
 disableKinds = ["sitemap", "RSS"]
 theme = "webslides"
 
