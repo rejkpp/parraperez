@@ -787,7 +787,8 @@ html,
 body {
   font-weight: 300;
   line-height: 1;
-  text-rendering: optimizeLegibility; }
+  text-rendering: optimizeLegibility;
+}
 
 html,
 body,
@@ -1072,6 +1073,11 @@ h3 [class*='bg-'] {
 h1 span {
   font-family: 'Maitree', times, serif; }
 
+/* -- Custom -- */
+.text-custom,
+h1 span {
+  font-family: Verdana, times, serif; }
+
 /* -- h1,h2... Promo/Landings -- */
 .text-landing {
   letter-spacing: .4rem;
@@ -1097,6 +1103,16 @@ h1 span {
 
 .text-lowercase {
   text-transform: lowercase; }
+
+.text-align-center {
+		text-align: center;
+	}
+.text-align-left {
+		text-align: left;
+	}
+.text-align-right {
+		text-align: right;
+	}
 
 /* -- Emoji (you'll love this) -- */
 .text-emoji {
@@ -1188,7 +1204,8 @@ h1 span {
   margin-bottom: 3.2rem;
   margin-left: 2.4rem;
   margin-right: 2.4rem;
-  position: relative; }
+  position: relative;
+}
 
 [class*='text-pull-'] {
   margin-top: .8rem;
@@ -1200,7 +1217,8 @@ h1 span {
 
 @media (min-width: 568px) {
   [class*='text-pull-'] {
-    max-width: 40%; }
+    max-width: 100%; 
+	}
   .text-pull-right {
     float: right;
     margin-left: 2.4rem;
@@ -1209,6 +1227,8 @@ h1 span {
     float: left;
     margin-left: -2.4rem;
     margin-right: 2.4rem; } }
+	.text-pull-none {
+	}
 
 img[class*='text-pull-'],
 figure[class*='text-pull-'] {
@@ -1693,6 +1713,10 @@ Blocks Links li>a = .flexblock.blink (.blink required)
     -webkit-box-flex: 1;
         -ms-flex: auto;
             flex: auto;
+						-webkit-box-align: center;
+						    -ms-flex-align: center;
+						            -ms-grid-row-align: center;
+						        align-items: center;
     text-align: left;
     -webkit-transition: .3s;
     transition: .3s;
@@ -1746,6 +1770,11 @@ footer .column h3 {
 .content-right .flexblock.features li,
 .content-left .flexblock.features li {
   width: 46%; }
+
+/*====================================================================
+6.0 Custom
+====================================================================== */
+
 
 /*====================================================================
 6.1 Features <ul class="flexblock features">
@@ -2621,6 +2650,12 @@ img.avatar-80 {
   height: 80px;
   width: 80px; }
 
+img.avatar-custom {
+  height: 123px;
+  width: 123px;
+}
+
+
 /*=========================================
 13. Tables
 =========================================== */
@@ -3183,6 +3218,11 @@ Slides - Backgrounds <section class="bg-primary">
 .bg-red {
   background-color: #c23; }
 
+.bg-custom {
+	background-color: #bf7168;
+	color: #eeeeee;
+ }
+
 .bg-white {
   background-color: #fff; }
 
@@ -3285,7 +3325,7 @@ TYPOGRAPHY
 
 /* -- Pull Quote (Right/Left)  -- */
 [class*='text-pull-'] {
-  border-top: 4px solid rgba(0, 0, 0, 0.5); }
+  border-top: 2.3px solid rgba(0, 0, 0, 0.23); }
 
 img[class*='text-pull-'],
 figure[class*='text-pull-'] {
@@ -3359,6 +3399,12 @@ nav li.email a:hover {
 .specs li:hover,
 .reasons li:hover {
   background-color: rgba(0, 20, 80, 0.03); }
+
+/*===================================================
+.flexblock li make flexbox
+===================================================== */
+.flexblock li {
+	  background-color: rgba(0, 20, 80, 0.03); }
 
 /*=========================================
 Features & Clients List
