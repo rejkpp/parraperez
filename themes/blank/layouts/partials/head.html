@@ -1,13 +1,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="{{ .Site.Params.keywords }}" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="{{ .Site.Params.themeColor }}" />
+
 <title>{{ .Title }}</title>
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+
+<!-- CSS -->
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 {{ with .OutputFormats.Get "RSS" -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 {{- end }}
-<meta name="keywords" content="{{ .Site.Params.keywords }}" />
-<meta name="robots" content="noodp" />
-<meta name="theme-color" content="{{ .Site.Params.themeColor }}" />
+
+{{ range $val := $.Site.Params.customCSS }}
+    {{ if gt (len $val) 0 }}
+        <link rel="stylesheet" type="text/css" href="{{ $val }}">
+    {{ end }}
+{{ end }}
