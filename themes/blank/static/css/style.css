@@ -2913,10 +2913,10 @@ Solution: stackoverflow.com/questions/34250282/flexbox-safari-bug-flex-wrap
       padding-bottom: 12rem;
       padding-top: 12rem; } } */
 
-		#webslides-zoomed > .wrap > .grid {
+		/* #webslides-zoomed > .wrap > .grid {
 			min-height: 100vh;
     	align-items: center;
-		}
+		} */
 
   #webslides-zoomed > .wrap > .grid > .column {
     -ms-flex-item-align: auto;
