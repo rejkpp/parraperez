@@ -1217,7 +1217,7 @@ h1 span {
 
 @media (min-width: 568px) {
   [class*='text-pull-'] {
-    max-width: 100%; 
+    max-width: 100%;
 	}
   .text-pull-right {
     float: right;
@@ -3399,12 +3399,6 @@ nav li.email a:hover {
 .specs li:hover,
 .reasons li:hover {
   background-color: rgba(0, 20, 80, 0.03); }
-
-/*===================================================
-.flexblock li make flexbox
-===================================================== */
-.flexblock li {
-	  background-color: rgba(0, 20, 80, 0.03); }
 
 /*=========================================
 Features & Clients List
