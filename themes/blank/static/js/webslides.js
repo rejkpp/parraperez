@@ -1627,7 +1627,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var HASH = '#slide';
-var slideRegex = /#slide=(\d+)/;
+var slideRegex = /#=(\d+)/;
 
 /**
  * Static class with methods to manipulate and extract info from the hash of
@@ -1714,7 +1714,7 @@ var Hash = function () {
       if (Hash.getSlideNumber() !== number - 1) {
         history.pushState({
           slideI: number - 1
-        }, '' + number, HASH + '' + number);
+        }, 'Slide ' + number, HASH + '=' + number);
       }
     }
   }]);
