@@ -11,8 +11,8 @@
 
 <!-- CSS -->
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/svg-icons.css" | relURL }}">
-<link rel="stylesheet" href="{{ "css/webslides.css" | relURL }}">
+<link rel="stylesheet" href="https://parraperez.com/css/svg-icons.css">
+<link rel="stylesheet" href="https://parraperez.com/css/webslides.css">
 {{ with .OutputFormats.Get "RSS" -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 {{- end }}
