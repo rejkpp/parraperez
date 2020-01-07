@@ -1062,7 +1062,7 @@ var WebSlides = function () {
       var _this3 = this;
 
       Object(__WEBPACK_IMPORTED_MODULE_3__utils_scroll_to__["a" /* default */])(0, 0);
-      var className = 'slideInRight';
+      var className = 'fadeIn';
 
       if (!isMovingForward) {
         nextSlide.moveBeforeFirst();
