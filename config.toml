@@ -1,6 +1,6 @@
 baseURL = "http://parraperez.com"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Parra Legacy"
 disableKinds = ["sitemap", "RSS"]
 theme = "webslides"
 
