@@ -2922,7 +2922,7 @@ Solution: stackoverflow.com/questions/34250282/flexbox-safari-bug-flex-wrap
         -ms-flex-order: 0;
             order: 0;
     position: relative;
-    width: 25%; }
+    width: 33.33%; }
     @media screen and (max-width: 567px) {
       #webslides-zoomed > .wrap > .grid > .column {
         width: 100%; } }
