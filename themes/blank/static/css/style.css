@@ -1208,12 +1208,15 @@ h1 span {
 }
 
 [class*='text-pull-'] {
-  margin-top: .8rem;
-  padding-top: 1.4rem; }
+  margin-top: 1.4rem;
+  /* padding-top: 1.4rem;  */
+}
   @media (min-width: 1024px) {
     [class*='text-pull-'] {
-      margin-left: -4.8rem;
-      margin-right: -4.8rem; } }
+      /* margin-left: -4.8rem;
+      margin-right: -4.8rem; */
+		}
+	}
 
 @media (min-width: 568px) {
   [class*='text-pull-'] {
@@ -1228,6 +1231,7 @@ h1 span {
     margin-left: -2.4rem;
     margin-right: 2.4rem; } }
 	.text-pull-none {
+		text-align: center;
 	}
 
 img[class*='text-pull-'],
