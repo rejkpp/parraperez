@@ -5,7 +5,7 @@ title = "Parra Legacy"
 DefaultContentLanguage = "en"
 languageCode = "en-us"
 
-theme = "webslides"
+theme = "blank"
 
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "all rights reserved"
