@@ -2879,18 +2879,6 @@ Solution: stackoverflow.com/questions/34250282/flexbox-safari-bug-flex-wrap
 18. Slides Index: Thumbnails navigation gallery
 ================================================ */
 #webslides-zoomed {
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   min-height: 100vh;
   position: relative;
   z-index: 2; }
@@ -2909,9 +2897,14 @@ Solution: stackoverflow.com/questions/34250282/flexbox-safari-bug-flex-wrap
         height: 200%;
         width: 200%; } }
   @media (min-width: 1024px) {
-    #webslides-zoomed > .wrap {
-      padding-bottom: 12rem;
-      padding-top: 12rem; } }
+		#webslides-zoomed > .wrap {
+      /* padding-bottom: 12rem;
+      padding-top: 12rem; } */
+		}
+		#webslides-zoomed > .wrap > .grid {
+			align-items: center;
+			miin-height: 100vh;
+		}
   #webslides-zoomed > .wrap > .grid > .column {
     -ms-flex-item-align: auto;
         align-self: auto;
@@ -2922,7 +2915,7 @@ Solution: stackoverflow.com/questions/34250282/flexbox-safari-bug-flex-wrap
         -ms-flex-order: 0;
             order: 0;
     position: relative;
-    width: 25%; }
+    width: 33.33%; }
     @media screen and (max-width: 567px) {
       #webslides-zoomed > .wrap > .grid > .column {
         width: 100%; } }
