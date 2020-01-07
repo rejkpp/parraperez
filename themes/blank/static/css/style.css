@@ -2879,6 +2879,18 @@ Solution: stackoverflow.com/questions/34250282/flexbox-safari-bug-flex-wrap
 18. Slides Index: Thumbnails navigation gallery
 ================================================ */
 #webslides-zoomed {
+	-ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   min-height: 100vh;
   position: relative;
   z-index: 2; }
