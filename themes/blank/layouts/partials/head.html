@@ -4,11 +4,12 @@
 <meta name="keywords" content="{{ .Site.Params.keywords }}" />
 <meta name="robots" content="noodp" />
 <meta name="theme-color" content="{{ .Site.Params.themeColor }}" />
-
 <title>{{ .Title }}</title>
 {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-<script type="text/javascript" src="https://parraperez.com/js/typed.js"></script>
+
+<script src="https://parraperez.com/js/typed.js"></script>
+
 <!-- CSS -->
 <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 <link rel="stylesheet" href="https://parraperez.com/css/svg-icons.css">
