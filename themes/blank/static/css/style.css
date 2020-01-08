@@ -1627,8 +1627,9 @@ form[class*='bg-'] {
 
 /* === 5.2 Counter / Navigation Slides  === */
 #navigation {
-  -webkit-animation: fadeIn 8s;
-          animation: fadeIn 8s;
+	display: none;
+  -webkit-animation: fadeIn 0s;
+          animation: fadeIn 0s;
   bottom: 0;
   left: 0;
   margin-left: auto;
@@ -3223,8 +3224,14 @@ Slides - Backgrounds <section class="bg-primary">
   background-color: #c23; }
 
 .bg-custom {
-	background-color: #bf7168;
-	color: #eeeeee;
+	background-color: #898989;
+	background-image:url("../img/all.jpg");
+	opacity: 0.8;
+	background-blend-mode: color-burn;
+ }
+
+ .parra {
+	 color: #eaeaea;
  }
 
 .bg-white {
@@ -3329,7 +3336,7 @@ TYPOGRAPHY
 
 /* -- Pull Quote (Right/Left)  -- */
 [class*='text-pull-'] {
-  border-top: 2.3px solid rgba(0, 0, 0, 0.23); }
+  border-top: 2.3px solid rgba(234, 234, 234, 1); }
 
 img[class*='text-pull-'],
 figure[class*='text-pull-'] {
