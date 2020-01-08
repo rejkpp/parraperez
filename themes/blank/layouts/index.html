@@ -28,15 +28,20 @@
 					<li>
 							<a href="#4">
 								<img class="avatar-custom" src="./img/test.png" alt="">
-								<p class="text-apple text-pull-none element">ramiro</p>
+								<div class="text-apple text-pull-none">
+									<span id="typed-strings" >
+										<p>ramiro</p>
+									</span>
+									<span id="typed"></span>
+								</div>
 								<script type="text/javascript">
-									var typed = new Typed(".element", {
-										string:[""],
-										typeSpeed: 100,
+									var typed = new Typed('#typed', {
+    								stringsElement: "#typed-strings",
+										typeSpeed: 200,
 										backSpeed: 100,
 										loop: true,
 										backDelay: 700
-});
+									});
 								</script>
 							</a>
 					</li>
