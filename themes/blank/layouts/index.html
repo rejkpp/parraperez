@@ -28,13 +28,16 @@
 					<li>
 							<a href="#4">
 								<img class="avatar-custom" src="./img/test.png" alt="">
-								<p class="text-apple text-pull-none ">ramiro</p>
-								<div id="typed-strings">
-  								<p>Typed.js is a <strong>JavaScript</strong> library.</p>
-  								<p>It <em>types</em> out sentences.</p>
-								</div>
-								<span id="typed"></span>
-								
+								<p class="text-apple text-pull-none element">ramiro</p>
+								<script type="text/javascript">
+									var typed = new Typed(".element", {
+										strings: [
+										"This is a JavaScript library"
+										"This is an ES6 module"
+										],
+										smartBackspace: true // Default value
+});
+								</script>
 							</a>
 					</li>
 					<li>
