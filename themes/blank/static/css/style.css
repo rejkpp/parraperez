@@ -3225,6 +3225,7 @@ Slides - Backgrounds <section class="bg-primary">
 
 .bg-custom {
 	background-image:url("../img/all_1920x1080_new.jpg");
+	opacity: 1;
  }
 
  .parra {
