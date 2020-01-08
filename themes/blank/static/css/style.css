@@ -3224,10 +3224,7 @@ Slides - Backgrounds <section class="bg-primary">
   background-color: #c23; }
 
 .bg-custom {
-	background-color: #898989;
 	background-image:url("../img/all_1920x1080_new.jpg");
-	opacity: 0.8;
-	background-blend-mode: color-burn;
  }
 
  .parra {
