@@ -1713,6 +1713,7 @@ Blocks Links li>a = .flexblock.blink (.blink required)
             flex-direction: column;
     margin: 0;
     /* padding: 2.4rem; */
+		padding-top: 2.4rem;
     position: relative; }
   .flexblock li {
     -webkit-box-flex: 1;
