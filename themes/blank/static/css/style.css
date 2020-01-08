@@ -1712,7 +1712,7 @@ Blocks Links li>a = .flexblock.blink (.blink required)
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
-    padding: 2.4rem;
+    /* padding: 2.4rem; */
     position: relative; }
   .flexblock li {
     -webkit-box-flex: 1;
@@ -3225,7 +3225,7 @@ Slides - Backgrounds <section class="bg-primary">
 
 .bg-custom {
 	background-color: #898989;
-	background-image:url("../img/all_960x540_2.jpg");
+	background-image:url("../img/all_960x540.jpg");
 	opacity: 0.8;
 	background-blend-mode: color-burn;
  }
