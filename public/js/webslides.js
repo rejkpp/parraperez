@@ -1062,11 +1062,11 @@ var WebSlides = function () {
       var _this3 = this;
 
       Object(__WEBPACK_IMPORTED_MODULE_3__utils_scroll_to__["a" /* default */])(0, 0);
-      var className = 'slideInRight';
+      var className = 'fadeIn';
 
       if (!isMovingForward) {
         nextSlide.moveBeforeFirst();
-        className = 'slideInLeft';
+        className = 'fadeIn';
       }
 
       if (this.currentSlide_) {
@@ -1626,8 +1626,8 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var HASH = '#slide';
-var slideRegex = /#slide=(\d+)/;
+var HASH = '#';
+var slideRegex = /#(\d+)/;
 
 /**
  * Static class with methods to manipulate and extract info from the hash of
@@ -1714,7 +1714,7 @@ var Hash = function () {
       if (Hash.getSlideNumber() !== number - 1) {
         history.pushState({
           slideI: number - 1
-        }, 'Slide ' + number, HASH + '=' + number);
+        }, 'Slide ' + number, HASH + '' + number);
       }
     }
   }]);
